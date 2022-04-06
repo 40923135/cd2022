@@ -42,7 +42,7 @@
 
     <link href="./w6_40923135.html.html" rel="canonical" />
 
-        <meta name="description" content="2022協同產品設計">
+        <meta name="description" content="w7 git clone https://github.com/mdecourse/scarysim.git 修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS += -lglut -lGLU cd scarysim qmake -o...">
 
         <meta name="author" content="yen">
 
@@ -54,12 +54,12 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="cd2022"/>
 <meta property="og:title" content="2020 Spring CP 課程"/>
-<meta property="og:description" content="2022協同產品設計"/>
+<meta property="og:description" content="w7 git clone https://github.com/mdecourse/scarysim.git 修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS += -lglut -lGLU cd scarysim qmake -o..."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="./w6_40923135.html.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2022-03-29 11:00:00+08:00"/>
-<meta property="article:modified_time" content="2022-03-30 11:43:40+08:00"/>
+<meta property="article:modified_time" content="2022-04-06 11:36:38+08:00"/>
 <meta property="article:author" content="./author/yen.html">
 <meta property="article:section" content="Misc"/>
 <meta property="article:tag" content="2022SpringCP"/>
@@ -74,7 +74,7 @@
   "name": "2020 Spring CP 課程",
   "headline": "2020 Spring CP 課程",
   "datePublished": "2022-03-29 11:00:00+08:00",
-  "dateModified": "2022-03-30 11:43:40+08:00",
+  "dateModified": "2022-04-06 11:36:38+08:00",
   "author": {
     "@type": "Person",
     "name": "yen",
@@ -82,7 +82,7 @@
   },
   "image": "./theme/images/post-bg.jpg",
   "url": "./w6_40923135.html.html",
-  "description": "2022協同產品設計"
+  "description": "w7 git clone https://github.com/mdecourse/scarysim.git 修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS += -lglut -lGLU cd scarysim qmake -o..."
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -204,7 +204,7 @@ init_mathjax();
             | <time datetime="週二 29 三月 2022">週二 29 三月 2022</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on 週三 30 三月 2022</span>
+            <span class="post-meta"> | Updated on 週三 06 四月 2022</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -224,7 +224,15 @@ init_mathjax();
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>2022協同產品設計</p>
+                <p>w7
+git clone https://github.com/mdecourse/scarysim.git
+修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU
+cd scarysim
+qmake -o Makefile scarysim.pro
+mingw32-make -f Makefile.Release 可以在 release 目錄取得 scarysim.exe
+因為 scarysim.exe 執行需要 base.obj, arm1.obj, arm2.obj, arm3.obj 等零件外型檔案, 以及對應的 .mtl 材質檔案, 因此可將 scarysim.exe 移至倉儲根目錄執行.
+由於此套程式碼在 Target 模式下, 零組件間會造成干涉, 表示其 Inverse Kinematic 運算並不正確, 請設法修正此錯誤後, 修改其零件尺寸與操作控制方法, 設法模擬 MTB 的 Pick and Place demo 範例.
+請各組指定組員分別利用 Solvespace、NX12、NX1980、NX2008 與 Onshape 繪製 Pick and Place demo 範例所需的零組件, 並完成 Coppeliasim 4.1.0、4.2.0 與 4.3.0 版的 MTB 機械手臂 Pick and Place 模擬, 完成後請說明在使用不同 MCAD 系統與版次的情況下, 該如何執行協同產品設計專案.</p>
 
 
 <h2>Python</h2>
