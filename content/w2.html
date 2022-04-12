@@ -143,7 +143,11 @@ img.add_border {
 <p><span>以永續便捷的方式取得已經選好組別的</span><span>學員學號</span><span>、學員</span><span>個人倉儲連結</span><span>、學員</span><span>個人網站</span><span>、各組位於學員帳號下的</span><span>大組倉儲</span><span>以及各學員帳號下各大組的</span><span>協同網站</span></p>
 <script src="./../cmsimde/static/brython.js">
 </script>
+<p>
+<script src="./../cmsimde/static/brython.js">
+</script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
 <!-- for ggame -->
 <p>
 <script src="/get_page/cmsimde/static/jquery-3.3.1.min.js"></script>
@@ -230,7 +234,7 @@ def run1():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+        url = "https://gist.githubusercontent.com/mdecourse/05930b1775b77293523b59b1bbb43e57/raw/2ffeba334d9862a9b4d765f328bc95684879465e/grp2a_2022.py"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -252,33 +256,7 @@ doc['clear_bd1'].bind('click', clear_bd1)
 run1()
 </script>
 <!-- 以上為內建程式, 頁面可透過 ?src=gist_url 執行 -->
-<p><!-- add 1 to 100 開始 -->
-<script type="text/python3">
-from browser import document as doc
-import ace
-
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-
-# 利用 ace 中的 Editor 建立 Ace 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
-Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-
-class button2:
-    def __init__(self, url):
-        self.url = url
-
-    # 記得加入 event 輸入變數
-    def do(self,ev):
-        Ace2.editor.setValue(open(self.url).read())
-        Ace2.editor.scrollToRow(0)
-        Ace2.editor.gotoLine(0)
-        Ace2.run()
-
-add1to100_url = "https://mde.tw/studlist/2022spring/2a.txt"
-</script>
-</p><br />每周進度 << <a href='每周進度.html'>Previous</a> <a href='w3.html'>Next</a> >> w3</div>
+<p></p><br />每周進度 << <a href='每周進度.html'>Previous</a> <a href='w3.html'>Next</a> >> w3</div>
         
     <!-- footer -->
       <div class="container">
